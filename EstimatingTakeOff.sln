@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32526.322
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EstimatingTakeOff", "EstimatingTakeOff\EstimatingTakeOff.csproj", "{D0AF34D7-8402-46A7-8426-C965DC5987CA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D0AF34D7-8402-46A7-8426-C965DC5987CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0AF34D7-8402-46A7-8426-C965DC5987CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0AF34D7-8402-46A7-8426-C965DC5987CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0AF34D7-8402-46A7-8426-C965DC5987CA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FB5B05E5-2BC9-4279-B60B-0513649E1389}
+	EndGlobalSection
+EndGlobal
