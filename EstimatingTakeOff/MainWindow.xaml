@@ -1,12 +1,65 @@
-﻿<Window x:Class="EstimatingTakeOff.MainWindow"
+﻿<fluent:RibbonWindow x:Class="EstimatingTakeOff.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EstimatingTakeOff"
+        xmlns:fluent="urn:fluent-ribbon"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="800" Width="1200">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <fluent:Ribbon x:Name="Ribbon"
+                       AutomaticStateManagement="False"
+                       ContentHeight="90" ContentGapHeight="2">
+            <fluent:Ribbon.Menu>
+                <fluent:ApplicationMenu x:Name="RibbonFileMenu" 
+                                    Header="FILE" 
+                                    IsDropDownOpen="False" 
+                                    MaxDropDownHeight="500"
+                                    RightPaneWidth="350"
+                                    AutomationProperties.AutomationId="File">
+                    <fluent:MenuItem/>
+                    <fluent:MenuItem/>
+                    <fluent:MenuItem Header="Settings">
+                        <fluent:MenuItem/>
+                    </fluent:MenuItem>
+                    <fluent:MenuItem/>
+
+                    <Separator/>
+
+                    <fluent:MenuItem/>
+                    <fluent:MenuItem/>
+                    <fluent:MenuItem/>
+                </fluent:ApplicationMenu>
+            </fluent:Ribbon.Menu>
+
+            <fluent:RibbonTabItem Header="Home" 
+                              IsSelected="True">
+
+                <fluent:RibbonGroupBox Header="Getting started">
+                    <fluent:Button x:Name="NewFile" Header="New"/>
+                    <fluent:Button x:Name="OpenFile" Header="Open" Click="OpenFile_Click"/>
+                    <fluent:Button x:Name="PrintFile" Header="Print"/>
+                </fluent:RibbonGroupBox>
+
+                <fluent:RibbonGroupBox Header="Measure">
+                    <fluent:Button x:Name="ScaleFile" Header="Scale"/>
+                    <fluent:Button x:Name="DimensionPage" Header="Dimension"/>
+                </fluent:RibbonGroupBox>
+
+                <fluent:RibbonGroupBox Header="TakeOff">
+                    <fluent:Button x:Name="AreaTO"  Header="Area"/>
+                    <fluent:Button x:Name="LinearTO" Header="Linear"/>
+                    <fluent:Button x:Name="SegmentTO" Header="Segment"/>
+                    <fluent:Button x:Name="CountTO" Header="Count"/>
+                </fluent:RibbonGroupBox>
+            </fluent:RibbonTabItem>
+        </fluent:Ribbon>
     </Grid>
-</Window>
+</fluent:RibbonWindow>
