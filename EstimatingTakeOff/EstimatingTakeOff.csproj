@@ -73,12 +73,33 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Enums\PdfError.cs" />
+    <Compile Include="Enums\PdfPrintMode.cs" />
     <Compile Include="Enums\PdfRenderFlags.cs" />
+    <Compile Include="Enums\PdfRotation.cs" />
     <Compile Include="src\IPdfDocument.cs" />
     <Compile Include="src\NativeMethods.cs" />
     <Compile Include="src\NativeMethods.Pdfium.cs" />
     <Compile Include="src\PdfBookmarkCollection.cs" />
     <Compile Include="src\PdfDocument.cs" />
+    <Compile Include="src\PdfException.cs" />
+    <Compile Include="src\PdfFile.cs" />
+    <Compile Include="src\PdfInformation.cs" />
+    <Compile Include="src\PdfiumResolveEventHandler.cs" />
+    <Compile Include="src\PdfiumResolver.cs" />
+    <Compile Include="src\PdfLibrary.cs" />
+    <Compile Include="src\PdfMatch.cs" />
+    <Compile Include="src\PdfMatches.cs" />
+    <Compile Include="src\PdfPageLink.cs" />
+    <Compile Include="src\PdfPageLinks.cs" />
+    <Compile Include="src\PdfPrintDocument.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="src\PdfPrintMultiplePages.cs" />
+    <Compile Include="src\PdfPrintSettings.cs" />
+    <Compile Include="src\PdfRectangle.cs" />
+    <Compile Include="src\PdfTextSpan.cs" />
+    <Compile Include="src\StreamManager.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

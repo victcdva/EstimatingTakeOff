@@ -10,7 +10,7 @@ namespace EstimatingTakeOff.src
     public class PdfBookmark
     {
         public string Title { get; set; }
-        public string PageIndex { get; set; }
+        public int PageIndex { get; set; }
         public PdfBookmarkCollection Children { get; }
 
         public PdfBookmark()
